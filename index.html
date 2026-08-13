@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SAURABH TELICOM AND CSC CENTRE | Tirwa Kannauj</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, "Noto Sans Devanagari", sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    background:#0757a8;
+    color:white;
+    padding:15px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+.logo{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#ffd21f;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd21f;
+}
+
+/* HERO */
+.hero{
+    min-height:520px;
+    background:linear-gradient(135deg,#0757a8,#0b87d6);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#ffd21f;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    margin:5px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#ffd21f;
+    color:#111;
+}
+
+.btn-primary:hover{
+    transform:scale(1.05);
+}
+
+.btn-whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+.btn-call{
+    background:white;
+    color:#0757a8;
+}
+
+/* SECTION */
+section{
+    padding:60px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-title h2{
+    color:#0757a8;
+    font-size:30px;
+}
+
+.section-title p{
+    color:#666;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card .icon{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    color:#0757a8;
+    margin-bottom:10px;
+}
+
+/* ABOUT */
+.about{
+    background:#eaf4ff;
+}
+
+.about-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:17px;
+}
+
+/* CONTACT */
+.contact{
+    background:#0757a8;
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.contact-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.contact-item{
+    background:white;
+    color:#222;
+    padding:18px 25px;
+    border-radius:12px;
+    min-width:230px;
+}
+
+.contact-item h3{
+    color:#0757a8;
+}
+
+/* FOOTER */
+footer{
+    background:#042d57;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:25px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+    z-index:1000;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    nav a{
+        margin:0 6px;
+        font-size:12px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    section{
+        padding:45px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        SAURABH <span>TELICOM</span> & CSC CENTRE
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>SAURABH <span>TELICOM</span> AND CSC CENTRE</h1>
+
+        <p>
+            Tirwa, Kannauj ??? ???? ??? Digital, CSC ?? Online Services ?? ???????? ???????
+        </p>
+
+        <a href="https://wa.me/917398356485" class="btn btn-whatsapp">
+            ?? WhatsApp ????
+        </a>
+
+        <a href="tel:+917398356485" class="btn btn-call">
+            ?? Call Now
+        </a>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+
+    <div class="section-title">
+        <h2>????? ??????</h2>
+        <p>?? ?? ??? ?? ??????? ?????? ?? ?????? ??????</p>
+    </div>
+
+    <div class="services">
+
+        <div class="card">
+            <div class="icon">??</div>
+            <h3>Aadhaar Services</h3>
+            <p>Aadhaar ?? ??????? ??????? ?????? ???????</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">??</div>
+            <h3>PAN Card</h3>
+            <p>New PAN Card ?? PAN ?? ??????? ???????</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">??</div>
+            <h3>Online Forms</h3>
+            <p>?????? ?????, Scholarship, Admission ?? ???? Online Form?</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">???</div>
+            <h3>PVC Card</h3>
+            <p>PVC Aadhaar, PAN, Voter ID ?? ???? ??????</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">??</div>
+            <h3>Ayushman Services</h3>
+            <p>Ayushman Card ?? ??????? ?????? ???????</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">???</div>
+            <h3>Insurance</h3>
+            <p>Insurance ?? ???? ??????? ?????? ?? ????????</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">??</div>
+            <h3>Banking Services</h3>
+            <p>Digital Banking ?? CSC ?? ?????? ??????? ???????</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">??</div>
+            <h3>Certificates</h3>
+            <p>Income, Caste, Domicile ??? ???? ?????? ????? ???????</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="section-title">
+        <h2>????? ???? ???</h2>
+    </div>
+
+    <div class="about-box">
+        <p>
+            <strong>SAURABH TELICOM AND CSC CENTRE</strong> ??? ???????
+            ??????, ?????? ?? CSC ?????? ?????? ????
+            ????? ???????? ????? ?? ????, ??? ?? ???????? ?????? ?????? ?????? ????? ???
+        </p>
+
+        <br>
+
+        <a href="https://wa.me/917080781309" class="btn btn-whatsapp">
+            ??? WhatsApp ????
+        </a>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2>???? ?????? ????</h2>
+
+    <p>???? ?? Online ?? CSC Service ?? ??? ?????? ????</p>
+
+    <div class="contact-box">
+
+        <div class="contact-item">
+            <h3>?? WhatsApp / Call</h3>
+            <p>7398356485</p>
+        </div>
+
+        <div class="contact-item">
+            <h3>?? WhatsApp</h3>
+            <p>7080781309</p>
+        </div>
+
+        <div class="contact-item">
+            <h3>?? Location</h3>
+            <p>Tirwa, Kannauj<br>Uttar Pradesh, India</p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <a href="https://wa.me/917398356485" class="btn btn-whatsapp">
+        ?? WhatsApp ?? ?????? ????
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>
+        © 2026 SAURABH TELICOM AND CSC CENTRE | All Rights Reserved
+    </p>
+    <p>Tirwa, Kannauj, Uttar Pradesh</p>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/917398356485"
+   class="whatsapp-float"
+   title="WhatsApp ????">
+   ?
+</a>
+
+</body>
+</html>
